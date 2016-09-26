@@ -14,6 +14,12 @@
 		653C69111D8F7E0500080B41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 653C690F1D8F7E0500080B41 /* LaunchScreen.storyboard */; };
 		653C691C1D8F7E0500080B41 /* pomoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653C691B1D8F7E0500080B41 /* pomoTests.swift */; };
 		653C69271D8F7E0500080B41 /* pomoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653C69261D8F7E0500080B41 /* pomoUITests.swift */; };
+		65730DC41D98A375001CD500 /* TaskTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65730DC31D98A375001CD500 /* TaskTest.swift */; };
+		65730DC61D98A3AE001CD500 /* TaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65730DC51D98A3AE001CD500 /* TaskManager.swift */; };
+		65730DC81D98A3BB001CD500 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65730DC71D98A3BB001CD500 /* Task.swift */; };
+		65730DCE1D98A4EB001CD500 /* TaskManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65730DCD1D98A4EB001CD500 /* TaskManagerTests.swift */; };
+		65730DD01D98A68F001CD500 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65730DCF1D98A68F001CD500 /* Constant.swift */; };
+		65730DD21D98AA1F001CD500 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65730DD11D98AA1F001CD500 /* Utility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,12 @@
 		653C69221D8F7E0500080B41 /* pomoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pomoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		653C69261D8F7E0500080B41 /* pomoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pomoUITests.swift; sourceTree = "<group>"; };
 		653C69281D8F7E0500080B41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65730DC31D98A375001CD500 /* TaskTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskTest.swift; sourceTree = "<group>"; };
+		65730DC51D98A3AE001CD500 /* TaskManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskManager.swift; sourceTree = "<group>"; };
+		65730DC71D98A3BB001CD500 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		65730DCD1D98A4EB001CD500 /* TaskManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskManagerTests.swift; sourceTree = "<group>"; };
+		65730DCF1D98A68F001CD500 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		65730DD11D98AA1F001CD500 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +109,11 @@
 		653C69051D8F7E0500080B41 /* pomo */ = {
 			isa = PBXGroup;
 			children = (
+				65730DCC1D98A3EF001CD500 /* Utility */,
 				653C69061D8F7E0500080B41 /* AppDelegate.swift */,
-				653C69081D8F7E0500080B41 /* ViewController.swift */,
+				65730DCA1D98A3CC001CD500 /* Manager */,
+				65730DC91D98A3C6001CD500 /* Model */,
+				65730DCB1D98A3D6001CD500 /* Controller */,
 				653C690A1D8F7E0500080B41 /* Main.storyboard */,
 				653C690D1D8F7E0500080B41 /* Assets.xcassets */,
 				653C690F1D8F7E0500080B41 /* LaunchScreen.storyboard */,
@@ -111,6 +126,8 @@
 			isa = PBXGroup;
 			children = (
 				653C691B1D8F7E0500080B41 /* pomoTests.swift */,
+				65730DC31D98A375001CD500 /* TaskTest.swift */,
+				65730DCD1D98A4EB001CD500 /* TaskManagerTests.swift */,
 				653C691D1D8F7E0500080B41 /* Info.plist */,
 			);
 			path = pomoTests;
@@ -123,6 +140,39 @@
 				653C69281D8F7E0500080B41 /* Info.plist */,
 			);
 			path = pomoUITests;
+			sourceTree = "<group>";
+		};
+		65730DC91D98A3C6001CD500 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				65730DC71D98A3BB001CD500 /* Task.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		65730DCA1D98A3CC001CD500 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				65730DC51D98A3AE001CD500 /* TaskManager.swift */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		65730DCB1D98A3D6001CD500 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				653C69081D8F7E0500080B41 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		65730DCC1D98A3EF001CD500 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				65730DCF1D98A68F001CD500 /* Constant.swift */,
+				65730DD11D98AA1F001CD500 /* Utility.swift */,
+			);
+			name = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +309,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65730DC81D98A3BB001CD500 /* Task.swift in Sources */,
+				65730DC61D98A3AE001CD500 /* TaskManager.swift in Sources */,
+				65730DD21D98AA1F001CD500 /* Utility.swift in Sources */,
+				65730DD01D98A68F001CD500 /* Constant.swift in Sources */,
 				653C69091D8F7E0500080B41 /* ViewController.swift in Sources */,
 				653C69071D8F7E0500080B41 /* AppDelegate.swift in Sources */,
 			);
@@ -268,6 +322,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65730DCE1D98A4EB001CD500 /* TaskManagerTests.swift in Sources */,
+				65730DC41D98A375001CD500 /* TaskTest.swift in Sources */,
 				653C691C1D8F7E0500080B41 /* pomoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -505,6 +561,7 @@
 				653C692D1D8F7E0500080B41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		653C692E1D8F7E0500080B41 /* Build configuration list for PBXNativeTarget "pomoTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +570,7 @@
 				653C69301D8F7E0500080B41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		653C69311D8F7E0500080B41 /* Build configuration list for PBXNativeTarget "pomoUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +579,7 @@
 				653C69331D8F7E0500080B41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
