@@ -11,7 +11,7 @@ import XCTest
 
 class TaskTest: XCTestCase {
     
-    var task : Task?
+    var task : Task!
     
     override func setUp() {
         super.setUp()
@@ -48,8 +48,8 @@ class TaskTest: XCTestCase {
         let unarchiver = NSKeyedUnarchiver(forReadingWith: data as Data)
         let uTask = unarchiver.decodeObject(forKey: key) as! Task
         
-        XCTAssertEqual(task!.startDate, uTask.startDate, "Dates are not Equal")
-        XCTAssertEqual(task!.title, uTask.title, "Start Text are not Equal")
+        XCTAssertEqual(task.startDate, uTask.startDate, "Dates are not Equal")
+        XCTAssertEqual(task.title, uTask.title, "Start Text are not Equal")
         
     }
 
